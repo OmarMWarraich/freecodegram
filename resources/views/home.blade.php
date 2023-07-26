@@ -10,7 +10,7 @@
         </div>
         <div class="col-9 pt-5">
             <div>
-                <h1>omw786</h1>
+                <h1>{{ $user->username }}</h1>
             </div>
             <div class="d-flex">
                 <div style="padding-right:2rem;"><strong>24</strong> posts</div>
