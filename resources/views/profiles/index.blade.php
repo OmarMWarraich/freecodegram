@@ -9,8 +9,13 @@
             </div>
         </div>
         <div class="col-9 pt-5">
-            <div>
-                <h1>{{ $user->username }}</h1>
+            <div class="d-flex justify-content-between align-items-baseline">
+                <h1>
+                    {{ $user->username }}
+                </h1>
+                <a href="" class="text-decoration-none">
+                    Add New Post
+                </a>
             </div>
             <div class="d-flex">
                 <div style="padding-right:2rem;"><strong>24</strong> posts</div>
@@ -20,7 +25,7 @@
             
             <div class="pt-4"><strong>{{ $user->profile->title }}</strong></div>
             <div>{{ $user->profile->description }}</div>
-            <div><a href="#">{{ $user->profile->url }}</a></div>
+            <div><a href="#" class="text-decoration-none">{{ $user->profile->url }}</a></div>
         </div>
     </div>
 
