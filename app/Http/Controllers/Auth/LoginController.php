@@ -32,7 +32,7 @@ class LoginController extends Controller
     //     return '/profile/' . auth()->user()->id;
     // }
     protected function redirectTo(){
-        return '/';
+        return '/profile/' . auth()->user()->id;
     }
     /**
      * Create a new controller instance.
