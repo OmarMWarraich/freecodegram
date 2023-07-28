@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
-            <div style="width:200px;height:200px;">
-                <img src="{{ asset('jpg/profile.jpg') }}" style="width:100%;height:100%;" class="rounded-circle" alt="image">
+            <div>
+                <img src="{{ asset('/storage/'.$user->profile->image) }}" class="rounded-circle w-100" alt="image">
             </div>
         </div>
         <div class="col-9 pt-5">
