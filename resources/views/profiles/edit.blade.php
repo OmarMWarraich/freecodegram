@@ -74,7 +74,7 @@
                         name="image"
                         id="image" 
                         value="{{ old('image') }}" 
-                        required autocomplete="image" autofocus>
+                        autocomplete="image" autofocus>
 
                     @error('image')
                         <strong>{{ $message }}</strong>
