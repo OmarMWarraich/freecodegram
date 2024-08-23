@@ -82,12 +82,6 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-> ## Getting Started
->
-> To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
 -   Have a computer and internet connection
 -   **PHP 8.1:** Check your PHP version with `php -v`
 -   **Composer:** Dependency manager for PHP. Verify installation with `composer -v`.
@@ -98,10 +92,17 @@ To get a local copy up and running, follow these steps.
 
 -   In order to get a copy of this project you need to download it from https://github.com/OmarMWarraich/freecodegram.git
 -   Extract the zipped file and open it in your code editor
+    **OR**
 -   Run the following command in your terminal to get all required files
 
 ```sh
 git clone https://github.com/OmarMWarraich/freecodegram.git
+```
+
+### NAVIGATE TO THE PROJECT DIRECTORY
+
+```sh
+cd freecodegram
 ```
 
 ### Install
@@ -174,13 +175,7 @@ To run all tests in your application, use the following command.
 1. Run tests
 
 ```sh
-./vendor/bin/phpunit
-```
-
-Alternatively, if you have PHPUnit installed globally, you can simply run:
-
-```sh
-phpunit
+php run test
 ```
 
 2. Run Specific Tests
@@ -188,20 +183,14 @@ phpunit
 If you want to run a specific test class, you can specify the path to that class:
 
 ```sh
-./vendor/bin/phpunit tests/Feature/ExampleTest.php
+php run test tests/Unit/ExampleTest.php
 ```
-
-Replace `tests/Feature/ExampleTest.php` with the path to the test class you want to run.
-
-3. Run Specific Test Method
 
 To run a specific test method, within a test class, use the `--filter` flag:
 
 ```sh
-./vendor/bin/phpunit --filter testBasicTest
+php artisan test --filter Unit
 ```
-
-Replace `testBasicTest` with the name of the test method you want to run.
 
 ## Author
 
