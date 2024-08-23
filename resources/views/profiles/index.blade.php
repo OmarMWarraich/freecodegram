@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
-            <div>
+            <a href="/profile/{{ $user->id }}/edit">
                 <img src="{{ asset($user->profile->profileImage()) }}" class="rounded-circle w-100" alt="image">
-            </div>
+            </a>
         </div>
         <div class="col-9 pt-5">
             <div class="d-flex justify-content-between align-items-baseline">
