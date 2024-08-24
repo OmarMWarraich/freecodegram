@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-3 p-5">
             @can('update', $user->profile)
-            <a href="/profile/{{ $user->id }}/edit">
+            <a href="/profile/{{ $user->id }}/edit" class="text-decoration-none">
             @endcan
                 <img src="{{ asset($user->profile->profileImage()) }}" class="rounded-circle w-100" alt="image">
             </a>
@@ -21,11 +21,11 @@
                     @endcannot
                 </div>
             @can('update', $user->profile)
-                <a href="/p/create" class="text-decoration-none">Add New Post</a>
+                <a href="/p/create" class="text-decoration-none btn btn-primary">Add New Post</a>
             @endcan
             </div>
             @can('update', $user->profile)
-                <a href="/profile/{{ $user->id }}/edit">Edit Profile</a>
+                <a href="/profile/{{ $user->id }}/edit" class="text-decoration-none btn btn-primary">Edit Profile</a>
             @endcan
             <div class="d-flex">
                 <div style="padding-right:2rem;"><strong>{{ $postCount }}</strong> posts</div>
