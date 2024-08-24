@@ -20,7 +20,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex" href="{{ url('/') }}">
+                <a class="navbar-brand d-flex" href="{{ route('profile.show', ['user' => auth()->user()->id]) }}">
                     <div><img src="/svg/logo.svg" alt="logo" style="height: 25px;padding-right: 1rem;border-right: 1px solid #333"></div>
                     <div style="padding-left:1rem">freeCodeGram</div>
                 </a>

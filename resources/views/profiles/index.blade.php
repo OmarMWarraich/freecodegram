@@ -4,7 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
+            @can('update', $user->profile)
             <a href="/profile/{{ $user->id }}/edit">
+            @endcan
                 <img src="{{ asset($user->profile->profileImage()) }}" class="rounded-circle w-100" alt="image">
             </a>
         </div>
@@ -14,7 +16,9 @@
                     <div class="me-4 h4">
                         {{ $user->username }}
                     </div>
+                    @cannot('update', $user->profile)
                     <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
+                    @endcannot
                 </div>
             @can('update', $user->profile)
                 <a href="/p/create" class="text-decoration-none">Add New Post</a>

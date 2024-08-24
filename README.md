@@ -90,7 +90,7 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
--   In order to get a copy of this project you need to download it from https://github.com/OmarMWarraich/freecodegram.git
+-   In order to get a copy of this project you need to download it from `https://github.com/OmarMWarraich/freecodegram.git`
 -   Extract the zipped file and open it in your code editor
     **OR**
 -   Run the following command in your terminal to get all required files

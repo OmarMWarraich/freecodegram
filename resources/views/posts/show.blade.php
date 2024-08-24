@@ -13,7 +13,7 @@
                 </div>
                 <div>
                     <strong>
-                        <a href="/profile/{ $post->user->id }}" class="text-decoration-none text-dark">
+                        <a href="/profile/{{ $post->user->id }}" class="text-decoration-none text-dark">
                             {{ $post->user->username }}
                         </a>
                     </strong>
