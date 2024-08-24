@@ -23,7 +23,7 @@ Route::get('/email', function () {
 
 Route::post('follow/{user}', [App\Http\Controllers\FollowsController::class, 'store']);
 
-Route::get('/', [App\Http\Controllers\PostsController::class, 'index']);
+Route::get('/', [App\Http\Controllers\PostsController::class, 'index'])->name('home');
 
 Route::get('/p/create', [App\Http\Controllers\PostsController::class, 'create']);
 Route::get('/p/{post}', [App\Http\Controllers\PostsController::class, 'show']);

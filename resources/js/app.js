@@ -4,8 +4,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import './bootstrap';
-import { createApp } from 'vue';
+import "./bootstrap";
+import { createApp } from "vue";
+
+// Fontawesome icons
+import "@fortawesome/fontawesome-free/js/all.js";
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -15,8 +18,8 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import FollowButton from './components/FollowButton.vue';
-app.component('follow-button', FollowButton);
+import FollowButton from "./components/FollowButton.vue";
+app.component("follow-button", FollowButton);
 
 /**
  * The following block of code may be used to automatically register your
@@ -36,4 +39,4 @@ app.component('follow-button', FollowButton);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+app.mount("#app");

@@ -1,8 +1,17 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+// <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+// convert to import
+
+// Custom
+@import "resources/css/app";
+
+// Fontawesome Icons
+@import "@fortawesome/fontawesome-free/css/all.css";

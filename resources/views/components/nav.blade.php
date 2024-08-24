@@ -1,10 +1,18 @@
 <!-- resources/views/components/nav.blade.php -->
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
+
+        @if(auth()->user())
         <a class="navbar-brand d-flex" href="{{ route('profile.show', ['user' => auth()->user()->id]) }}">
             <div><img src="/svg/logo.svg" alt="logo" style="height: 25px;padding-right: 1rem;border-right: 1px solid #333"></div>
-            <div style="padding-left:1rem">freeCodeGram</div>
+            <div style="padding-left:1rem;" class="custom-font">Freecodegram</div>
         </a>
+        @else
+        <a class="navbar-brand d-flex" href="/login">
+            <div><img src="/svg/logo.svg" alt="logo" style="height: 25px;padding-right: 1rem;border-right: 1px solid #333"></div>
+            <div style="padding-left:1rem;" class="custom-font">Freecodegram</div>
+        </a>
+        @endif
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
